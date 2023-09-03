@@ -1,5 +1,8 @@
 package com.wanted.preonboarding.theater.service.handler;
 
+import lombok.Getter;
+
+@Getter
 public class Audience {
     private final Bag bag;
 
@@ -7,7 +10,7 @@ public class Audience {
         this.bag = bag;
     }
 
-    public Bag getBag(){
-        return bag;
+    public Boolean hasInvitation(){
+        return bag.hasInvitation();
     }
 }
